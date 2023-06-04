@@ -1,0 +1,21 @@
+button, body, input{
+    font-family: 'Comic Sans MS', arial;
+    font-weight: bold;
+}
+
+body{
+    text-align: center;
+    text-shadow: 1px 1px 1px #aaa;
+    background-image: url("https://media.tenor.com/yj0ADLLcoCcAAAAC/quoi-comment-ca-mon-reuf.gif");
+    background-size: cover;
+
+}
+
+h4{
+    display:inline;
+}
+
+#restart{
+    display:none;
+    margin-top:10px;
+}
