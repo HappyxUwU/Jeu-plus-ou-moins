@@ -47,21 +47,24 @@ function loose(){
 
 submitButton.addEventListener('click', () => {
     select.play();
+    essaisRestants.innerText -= 1;
 
     guessValue = guess.value;
 
     if(parseInt(essaisRestants.innerText) <= 0) {
-        loose(); 
+        loose();
         return;
     }
     if(guessValue == nombre){
         gg();
     } else if(guessValue < nombre){
         plus();
-    } else{
+    } else if(guessValue > nombre){
         moins();
+    } else{
+        alert(`ERREUR WHAT DSL LE NOMBRE C'ÉTAIT ${nombre} (essaie pour voir)`);
     }
-    essaisRestants.innerText -= 1;
+    
 })
 
 restartButton.addEventListener('click', () => {
